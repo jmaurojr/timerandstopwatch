@@ -4,6 +4,8 @@
 [] - keyboard shortcuts and icon
 [] - 5min, 10min increase/decrease buttons
 [] - hide header/minutes and seconds without hover
+[] - animations
+[] - transparency
 
 /_Verde_/
 cad2c5

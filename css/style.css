@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,11 @@
 
 body {
   background-color: gray;
+}
+
+html {
+  height: 100vh;
+  background-color: black;
 }
 
 .header {
@@ -47,6 +54,78 @@ body {
   font-size: larger;
   justify-content: center;
   align-items: center;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start-btn {
+  height: 5vh;
+  width: 10vh;
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  font-family: roboto mono;
+  font-weight: bolder;
+}
+
+.numbers {
+  font-size: 400%;
+  color: white;
+  font-family: roboto mono;
+}
+
+.plus-btn {
+  display: flex;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  font-size: larger;
+}
+
+.minus-btn {
+  display: flex;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  font-size: larger;
+}
+
+.timer-container {
+  background-color: black;
+}
+
+.min-sec {
+  background-color: black;
+  color: yellow;
+  font-family: roboto mono;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.minutes {
+  margin-left: 100px;
 }
 
 /*cad2c5
