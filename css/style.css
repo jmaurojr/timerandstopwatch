@@ -26,7 +26,7 @@ html {
   min-width: 22vw;
   background-color: black;
   color: yellow;
-  border: white solid 1px;
+  /* border: white solid 1px; */
   font-size: larger;
 }
 
@@ -35,7 +35,7 @@ html {
   min-width: 22vw;
   background-color: black;
   color: yellow;
-  border: white solid 1px;
+  /* border: white solid 1px; */
   font-size: larger;
 }
 
@@ -50,7 +50,7 @@ html {
   min-width: 28vw;
   background-color: black;
   color: yellow;
-  border: white solid 1px;
+  /* border: white solid 1px; */
   font-size: larger;
   justify-content: center;
   align-items: center;
