@@ -1,56 +1,41 @@
-let sec = 0;
-let min = 0;
+const btnStart = document.getElementById("btn-start");
 
-function start() {
-  setInterval(watch, 100);
-}
+btnStart.addEventListener("click", () => {
+  const hours = document.getElementById("hour");
+  const minutes = document.getElementById("minute");
+  const seconds = document.getElementById("second");
 
-function watch() {
-  sec++;
-  if (sec == 60) {
-    min++;
-    sec = 0;
-  }
-  document.getElementById("numbers").innerText = `${min}:${sec}`;
-}
+  let duration =
+    parseInt(hours.value) * 60 * 60 +
+    parseInt(minutes.value) * 60 +
+    parseInt(seconds.value);
 
-/* document.getElementById("temaAzul").addEventListener("click", function () {
-  document.querySelector("div.sqr1").setAttribute("class", "sqr1bl");
+  display = document.getElementById("timer");
+  timer(duration, display);
 });
 
-document.getElementById("temaAzul").addEventListener("click", function () {
-  document.querySelector("div.sqr2").setAttribute("class", "sqr2bl");
-});
+const timer = (duration, display) => {
+  let timer = duration;
+  let hours, minutes, seconds;
 
-document.getElementById("temaAzul").addEventListener("click", function () {
-  document.querySelector("div.sqr3").setAttribute("class", "sqr3bl");
-});
+  let interval = setInterval(() => {
+    hours = Math.floor(timer / 60 / 60);
+    minutes = Math.floor(timer / 60 - hours * 60);
+    seconds = Math.floor(timer % 60);
 
-document.getElementById("temaAzul").addEventListener("click", function () {
-  document.querySelector("div.sqr4").setAttribute("class", "sqr4bl");
-});
+    // console.log(timer);
 
-document.getElementById("temaAzul").addEventListener("click", function () {
-  document.querySelector("div.sqr5").setAttribute("class", "sqr5bl");
-});
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
-document.getElementById("temaVerde").addEventListener("click", function () {
-  document.querySelector("div.sqr1bl").setAttribute("class", "sqr1");
-});
+    display.innerHTML = `${hours}:${minutes}:${seconds}`;
 
-document.getElementById("temaVerde").addEventListener("click", function () {
-  document.querySelector("div.sqr2bl").setAttribute("class", "sqr2");
-});
+    timer -= 1;
 
-document.getElementById("temaVerde").addEventListener("click", function () {
-  document.querySelector("div.sqr3bl").setAttribute("class", "sqr3");
-});
-
-document.getElementById("temaVerde").addEventListener("click", function () {
-  document.querySelector("div.sqr4bl").setAttribute("class", "sqr4");
-});
-
-document.getElementById("temaVerde").addEventListener("click", function () {
-  document.querySelector("div.sqr5bl").setAttribute("class", "sqr5");
-});
- */
+    if (timer < 0) {
+      /* display.innerHTML = "ACABOU!!!"; */
+      clearInterval(interval);
+    }
+  }, 1000);
+};

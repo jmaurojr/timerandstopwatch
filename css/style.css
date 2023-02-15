@@ -1,140 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: gray;
-}
-
-html {
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  background-repeat: no-repeat;
   height: 100vh;
-  background-color: black;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  height: 9vh;
-  justify-content: space-around;
-}
-.settings-btn {
-  height: 7vh;
-  min-width: 22vw;
-  background-color: black;
-  color: yellow;
-  /* border: white solid 1px; */
-  font-size: larger;
-}
-
-.repeat-btn {
-  height: 7vh;
-  min-width: 22vw;
-  background-color: black;
-  color: yellow;
-  /* border: white solid 1px; */
-  font-size: larger;
-}
-
-.fullscreen {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.fullscreen-btn {
-  display: flex;
-  height: 7vh;
-  min-width: 28vw;
-  background-color: black;
-  color: yellow;
-  /* border: white solid 1px; */
-  font-size: larger;
-  justify-content: center;
-  align-items: center;
-}
-
-.timer-container {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.start-btn {
-  height: 5vh;
-  width: 10vh;
-  border-radius: 40px;
-  margin: 0;
-  padding: 0;
-  background-color: yellow;
-  font-family: roboto mono;
-  font-weight: bolder;
-}
-
-.numbers {
-  font-size: 400%;
+label {
+  font-size: 30px;
+  padding-right: 20px;
   color: white;
-  font-family: roboto mono;
 }
 
-.plus-btn {
+input {
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  font-size: 20px;
+  background-color: rgb(54, 236, 54);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.timer {
+  font-size: 200px;
+  text-align: center;
+  color: white;
+}
+
+.input-container {
+  margin: 20px;
+}
+
+.align-inputs {
   display: flex;
-  height: 5vh;
-  width: 5vh;
-  border-radius: 40px;
-  margin: 0;
-  padding: 0;
-  background-color: yellow;
   justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color: black;
-  font-size: larger;
 }
 
-.minus-btn {
-  display: flex;
-  height: 5vh;
-  width: 5vh;
-  border-radius: 40px;
-  margin: 0;
-  padding: 0;
-  background-color: yellow;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color: black;
-  font-size: larger;
+.btn {
+  text-align: center;
 }
-
-.timer-container {
-  background-color: black;
-}
-
-.min-sec {
-  background-color: black;
-  color: yellow;
-  font-family: roboto mono;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.minutes {
-  margin-left: 100px;
-}
-
-/*cad2c5
-84a98c
-52796f
-354f52
-2f3e46*/
-
-/*778da9
-415a77
-1b263b
-0d1b2a*/
