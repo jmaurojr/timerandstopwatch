@@ -1,4 +1,20 @@
-document.getElementById("temaAzul").addEventListener("click", function () {
+let sec = 0;
+let min = 0;
+
+function start() {
+  setInterval(watch, 100);
+}
+
+function watch() {
+  sec++;
+  if (sec == 60) {
+    min++;
+    sec = 0;
+  }
+  document.getElementById("numbers").innerText = `${min}:${sec}`;
+}
+
+/* document.getElementById("temaAzul").addEventListener("click", function () {
   document.querySelector("div.sqr1").setAttribute("class", "sqr1bl");
 });
 
@@ -37,3 +53,4 @@ document.getElementById("temaVerde").addEventListener("click", function () {
 document.getElementById("temaVerde").addEventListener("click", function () {
   document.querySelector("div.sqr5bl").setAttribute("class", "sqr5");
 });
+ */
