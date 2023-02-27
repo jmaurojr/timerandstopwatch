@@ -1,22 +1,27 @@
-[] - Timer
-[] - StopWatch
-[] - Preferences
-[] - keyboard shortcuts and icon
-[] - 5min, 10min increase/decrease buttons
-[] - hide header/minutes and seconds without hover
-[] - animations
-[] - transparency
 
-/_Verde_/
-cad2c5
-84a98c
-52796f
-354f52
-2f3e46
+# Timer em JavaScript
 
-/_Azul_/
-e0e1dd
-778da9
-415a77
-1b263b
-0d1b2a
+Esse projeto é um timer que utiliza JavaScript
+
+
+## Demonstração
+
+https://jmaurojr.github.io/timerandstopwatch/
+
+
+## Autores
+
+- [@jmaurojr](https://www.github.com/jmaurojr)
+
+
+## Feedback
+
+Se você tiver algum feedback, por favor nos deixe saber por meio de jmaurojr@gmail.com
+
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maurocardosojr/)
+
+
+
