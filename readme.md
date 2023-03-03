@@ -16,7 +16,7 @@ https://jmaurojr.github.io/timerandstopwatch/
 
 ## Feedback
 
-Se você tiver algum feedback, por favor nos deixe saber por meio de jmaurojr@gmail.com
+Se você tiver algum feedback, por favor mande para jmaurojr@gmail.com
 
 
 ## 🔗 Links
